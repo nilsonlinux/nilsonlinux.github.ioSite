@@ -1,0 +1,51 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Nilsonlinux
+description: > # this means to ignore newlines until "baseurl:"
+  
+baseurl: 
+url: "https://nilsonlinux.github.io/"
+permalink: /:year/:month/:day/:title
+repository: Nilsonlinux/nilsonlinux
+paginate: 5
+
+# MatJek specific configurations
+# cynp specific configurations - 171124
+github_profile: "https://github.com/nilsonlinux"
+user: "Nilsonlinux"
+user_email: "nilsonlinux@gmail.com"
+contact_url: "https://goo.gl/Tp9FCa"
+google_tracking_id: "UA-122784671-1"
+google_site_verification: "UA-122784671-1"
+# It relates to replay comment - 171124
+disqus_shortname: "nilsonlinux"
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-mermaid
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+  style: compressed
+future: true
+mermaid:
+  src: 'assets/js/mermaid.js'
