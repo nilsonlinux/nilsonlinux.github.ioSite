@@ -2,4 +2,4 @@
 layout: page
 title: "Pesquisar"
 ---
-{% include pesquisar.html %}
+{% include search.html %}
