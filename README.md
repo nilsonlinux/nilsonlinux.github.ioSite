@@ -1,7 +1,5 @@
 # MatJek
 
-[![Faça uma Doação](https://travis-ci.org/hoisie/web.svg?branch=master)](https://travis-ci.org/hoisie/web)
-
 
 ## Features
 
