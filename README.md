@@ -1,6 +1,7 @@
 # MatJek
 
-A responsive [Material](https://material.io/) theme based on [Materialize.css](http://materializecss.com/) for jekyll sites.
+[![Faça uma Doação](https://travis-ci.org/hoisie/web.svg?branch=master)](https://travis-ci.org/hoisie/web)
+
 
 ## Features
 
