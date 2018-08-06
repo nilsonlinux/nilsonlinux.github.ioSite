@@ -27,56 +27,64 @@ Alguns dos comandos bash são curtos e outros são longos. Alguns deles são dif
 Tenha em mente que a idéia não é criar aliases para cada comando de terminal, mas aqueles que você usa repetidamente. E também, esteja ciente de que alguns aliases podem ser palavras reservadas, então teste-as antes de sobrescrever erroneamente um comando crítico.
 Encurte os comandos do git
 Fiz um teste simples para ilustrar quanto tempo é necessário para fazer alterações no Github. Em média, leva cerca de 20 a 25 segundos para o programador médio empurrar as alterações para o github.com .
-
+```
 # Test 
 git add. 
 git commit - m "pequenas alterações" 
 git push -u origem mestre
 Digamos que você faça pelo menos 15 git pushsemanas por semana, e o tempo total de envio de alterações para um repositório leva cerca de 20 segundos.
+```
+Uma semana levaria 5 minutos  
+Um mês levaria 20 minutos  
+Um ano levaria 4 horas  
+E se substituirmos esses 3 comandos por um apelido lazyman "minor changes", reduziremos de 20 segundos para 5 segundos.  
 
-Uma semana levaria 5 minutos
-Um mês levaria 20 minutos
-Um ano levaria 4 horas
-E se substituirmos esses 3 comandos por um apelido lazyman "minor changes", reduziremos de 20 segundos para 5 segundos.
-
-Uma semana levaria 1,25 minutos
-Um mês levaria 5 minutos
-Um ano levaria 1 hora.
+Uma semana levaria 1,25 minutos  
+Um mês levaria 5 minutos  
+Um ano levaria 1 hora.   
 Em geral, aumentamos o desempenho em 75% (um fator de 3). Este foi apenas um exemplo simples, mas imagine quanto tempo podemos salvar, por exemplo, se executar comandos como run apache server && run tests && report data && closeou gcc project-source-code.c -o executable-file-name15-30 vezes por dia.
 
-Como eu medi o aumento de desempenho? (para nerds)
+Como eu medi o aumento de desempenho? (para nerds)  
+```
 # Formula
 ((old - new) / old) * 100%
 = ((20 sec - 5 sec) / 20 sec) * 100%
-= 75 % (performance increase) 
-Antes de criar aliases
+= 75 % (performance increase)  
+```
+**Antes de criar aliases**    
 Para criar aliases, geralmente os colocamos em ~/.bashrcarquivo, este é um arquivo oculto no seu diretório pessoal que você pode acessar de qualquer lugar no seu terminal. No entanto, uma boa prática é manter os arquivos do sistema separados do caso de uso pessoal. Por esse motivo, vamos criar um novo arquivo chamado ~/.custom_aliasese colocar todos os aliases lá. Além disso, lembre-se de que, sempre que você adicionar um novo alias, execute, source ~/.custom_aliasescaso contrário, os aliases não funcionarão.
 
 Etapa 1 - criar um arquivo custom_aliases
 Todos os aliases que você cria devem ser armazenados nesse arquivo.
-
+```
 # criar arquivo 
 toque ~ / .custom_aliases
+```
 Etapa 2 - Abra o arquivo custom_aliases
-Abra o arquivo através de um editor de texto, através de geditou code(código do Visual Studio), ou o que você preferir.
+Abra o arquivo através de um editor de texto, através de ```gedit``` ou ```code```(código do Visual Studio),  
+ou o que você preferir.  
 
-Código do Visual Studio (se instalado)
-
+Código do Visual Studio (se instalado)  
+```
 # abre o 
-código do arquivo ~ / .custom_aliases
+código do arquivo ~ / .custom_aliases  
+```
 Gedit
-
+```
 # abre o arquivo 
-gedit ~ / .custom_aliases
-Etapa 3 - Criar atalhos (aliases)
-Vamos criar um alias simples que imprima “Bem-vindo John Doe” quando digitarmos bem-vindos no terminal bash.
-
-alias welcome = 'echo "Bem-vindo $ USER."'
+gedit ~ / .custom_aliases  
+```
+Etapa 3 - Criar atalhos (aliases)  
+Vamos criar um alias simples que imprima “Bem-vindo John Doe” quando digitarmos bem-vindos no terminal bash.  
+```
+alias welcome = 'echo "Bem-vindo $ USER."'  
+```
 Etapa 4— Atualizar alterações
-Antes de poder executar o comando bash recém-criado, você deve atualizar o custom_aliasesarquivo.
-
+Antes de poder executar o comando bash recém-criado, você deve atualizar o ```custom_aliasesarquivo```.  
+```
 # atualiza a 
-fonte do arquivo ~ / .custom_aliases
+fonte do arquivo ~ / .custom_aliases  
+```
 Passo 5 - Execute o novo comando bash
 Digite o seguinte na sua linha de comando preferida.
 
