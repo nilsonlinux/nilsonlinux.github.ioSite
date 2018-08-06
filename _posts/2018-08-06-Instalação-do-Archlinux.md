@@ -22,13 +22,13 @@ Power Off — Desligar o Computador
 ################ ARCH-LINUX ##############
 
 1- Mudar teclado para abnt2 (PT-BR)  
-**`loadkeys br-abnt2``**   
+**`loadkeys br-abnt2`**   
 
 2- Mudar a fonte do terminal.  
-**`setfont lat0–16``**   
+**`setfont lat0–16`**   
 
 3- Configurar locale (Localização)  
-**`nano /etc/locale.gen``**   
+**`nano /etc/locale.gen`**   
 
 descomentar essa linha:  
 pt_BR.UTF-8 UTF-8  
@@ -36,11 +36,11 @@ pt_BR.UTF-8 UTF-8
 Salvar “ctrl+o” depois (Enter) e sair “ctrl+x”  
 
 4- Criar o aquirvo de conf de lingua  
-**`locale-gen``**   
-**`export LANG=pt_BR.UTF-8``**   
+**`locale-gen`**   
+**`export LANG=pt_BR.UTF-8`**  
 
 5- Caso sua internet seja cabeada.  
-**`dhcpcd``**   
+**`dhcpcd`**  
 
 6- Caso sua rede seja wireless.  
 **`wifi-menu`**  
@@ -132,7 +132,7 @@ Salvar “ctrl+o” depois (Enter) e sair “ctrl+x”
 **`ln -sf /usr/share/zoneinfo/America/Recife /etc/localtime`**  
 
 27- Sincronizando o relógio de hardware com o do sistema  
-**`hwclock — systohc — utc**(UTC (recomendado))  
+**`hwclock — systohc — utc  (UTC (recomendado)`**  
 
 28- Configurando o repositório. (Se você instalou o Arch Linux x86_64, é recomendado que você habilite o repositório [multilib], bem (para ser capaz de executar aplicativos de 32-bits em seu sistema 64-bits)  
 **`nano /etc/pacman.conf`**  
@@ -188,11 +188,11 @@ Para os processadores AMD instalar o pacote linux-firmware
 **`nano /etc/sudoers`**  
 
 Descomente a opção  
-**Uncomment to allow members of group wheel to execute any command`**  
+**`Uncomment to allow members of group wheel to execute any command`**    
 **`%wheel ALL=(ALL) ALL`**  
 
  wheel ALL=(ALL) ALL  
-
+  
 40- Instalar componentes do Wi-Fi.  
 **`pacman -S wpa-supplicant networkmanager net-tools`**  
 **`systemctl enable NetworkManager`**  
@@ -332,7 +332,7 @@ I3:
 “exec i3”  
 Awesome:  
 “exec awesome”  
-########## **`Inicialmente no Ambiente de Trabalho`**##########  
+##########**`Inicialmente no Ambiente de Trabalho`**##########  
 
 1 -Entre como SuperUsuário #  
 $ su  
