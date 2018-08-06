@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Contato"
+title: "Contatos"
 css: ["contact.css"]
 ---
 <div class="col s12">
