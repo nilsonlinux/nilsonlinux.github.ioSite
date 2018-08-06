@@ -4,4 +4,4 @@ title: "Sobre mim"
 css: ["about.css", "animate.css", "morphext.css"]
 js: ["morphext.min.js", "about.js"]
 ---
-{% include mais.html %}
+{% include sobre.html %}
