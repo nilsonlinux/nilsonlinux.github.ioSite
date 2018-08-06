@@ -20,7 +20,7 @@ Power Off — Desligar o Computador
 - Você já está logado como # (root)
 
 ################ ARCH-LINUX ##############
-{% highlight ruby %}
+
 1- Mudar teclado para abnt2 (PT-BR)  
 **loadkeys br-abnt2**   
 
@@ -394,6 +394,5 @@ Nota: Os usuários não deveriam usar sudo enquanto estiverem usando o comando y
 Para atualizar os pacotes instalados a partir do AUR:  
 
 $ yaourt -Suy — aur — noconfirm  
-{% endhighlight %}
 
 ####################**FIM **####################  
