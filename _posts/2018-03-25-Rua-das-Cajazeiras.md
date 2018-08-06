@@ -7,7 +7,7 @@ tags: Cep Centro
 comments: 1
 ---
 {% highlight ruby %}
-Rua das Cajazeiras - Centro (CEP 65300 127)
+Rua das Cajazeiras - Centro (CEP 65300-127)
 {% endhighlight %}
 
 
