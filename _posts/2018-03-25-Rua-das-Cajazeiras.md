@@ -2,8 +2,8 @@
 layout: post
 title:  "Rua das Cajazeiras"
 date:   2018-03-25 01:30:13 +0800
-categories: Rua
-tags: Cep Centro
+categories: Rua Centro
+tags: Cep
 comments: 1
 ---
 {% highlight ruby %}
