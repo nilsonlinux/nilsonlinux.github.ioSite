@@ -2,6 +2,15 @@
 <html lang="pt-BR">
 <html>
   <head>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "63e2f480-235e-444b-ab23-c2dc7dc731cc",
+    });
+  });
+</script>      
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
@@ -34,15 +43,6 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{site.baseurl}}/sitemap.xml">
     {% seo title=false %}
   </head>
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "63e2f480-235e-444b-ab23-c2dc7dc731cc",
-    });
-  });
-</script>  
   <body>
     <header>
       <nav class="top-nav teal">
