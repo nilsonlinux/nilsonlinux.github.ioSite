@@ -396,8 +396,3 @@ Para atualizar os pacotes instalados a partir do AUR:
 $ yaourt -Suy — aur — noconfirm  
 
 ####################**FIM **####################  
-
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
