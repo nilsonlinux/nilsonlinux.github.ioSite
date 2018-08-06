@@ -21,38 +21,38 @@ Power Off — Desligar o Computador
 
 ################ ARCH-LINUX ##############
 
-1- Mudar teclado para abnt2 (PT-BR)
+1- Mudar teclado para abnt2 (PT-BR)  
 **loadkeys br-abnt2**
 
-2- Mudar a fonte do terminal. 
+2- Mudar a fonte do terminal.  
 **setfont lat0–16**
 
-3- Configurar locale (Localização)
+3- Configurar locale (Localização)  
 **nano /etc/locale.gen**
 
-descomentar essa linha:
+descomentar essa linha:  
 pt_BR.UTF-8 UTF-8
 
-Salvar “ctrl+o” depois (Enter) e sair “ctrl+x”
+Salvar “ctrl+o” depois (Enter) e sair “ctrl+x”  
 
-4- Criar o aquirvo de conf de lingua
-**locale-gen**
-**export LANG=pt_BR.UTF-8**
+4- Criar o aquirvo de conf de lingua  
+**locale-gen**  
+**export LANG=pt_BR.UTF-8**  
 
-5- Caso sua internet seja cabeada.
-**dhcpcd**
+5- Caso sua internet seja cabeada.  
+**dhcpcd**  
 
-6- Caso sua rede seja wireless.
-**wifi-menu**
+6- Caso sua rede seja wireless.  
+**wifi-menu**  
 
-7- Testar a Conectividade.
-**ping -c 3 www.google.com**
+7- Testar a Conectividade.  
+**ping -c 3 www.google.com**  
 
-8- Descobri qual disco rígido foi detectado:
-**dmesg | grep sd**
+8- Descobri qual disco rígido foi detectado:  
+**dmesg | grep sd**  
 
-9- Configurar as partições no disco ( No meu caso, usei um disco de 20GB)
-**cfdisk /dev/sda ‘sda’ (Primeiro disco rígido SATA) ou ‘sdb’ (Segundo disco rígido SATA)**
+9- Configurar as partições no disco ( No meu caso, usei um disco de 20GB)  
+**cfdisk /dev/sda ‘sda’ (Primeiro disco rígido SATA) ou ‘sdb’ (Segundo disco rígido SATA)**  
 
 sda1 * 9G /
 sda2 1G swap
@@ -62,31 +62,31 @@ sda3 10G /home
 Escrever/Write — Sim/Yes
 Quit/Sair
 
-11- Para formatar as partições com um sistema de arquivos ext4:
-**mkfs.ext4 /dev/sda1**
-**mkfs.ext4 /dev/sda3**
+11- Para formatar as partições com um sistema de arquivos ext4:  
+**mkfs.ext4 /dev/sda1**  
+**mkfs.ext4 /dev/sda3**  
 
-12- E para formatar e ativar a partição de swap:
-**mkswap /dev/sda2**
-**swapon /dev/sda2**
+12- E para formatar e ativar a partição de swap:  
+**mkswap /dev/sda2**  
+**swapon /dev/sda2**  
 
-Para verificar se a partição swap está funcionando, utilize o comando free ou swapon
-**swapon -s**
-**free -h**
+Para verificar se a partição swap está funcionando, utilize o comando free ou swapon  
+**swapon -s**  
+**free -h**  
 
-13- Primeiro, monte a partição raíz em /mnt. 
-**mount /dev/sda1 /mnt**
+13- Primeiro, monte a partição raíz em /mnt.  
+**mount /dev/sda1 /mnt**  
 
-14- Monte então a partição destinada ao /home e outras separadas para o /boot, /var, etc, caso desejar:
-**mkdir /mnt/home**
-**mount /dev/sda3 /mnt/home**
+14- Monte então a partição destinada ao /home e outras separadas para o /boot, /var, etc, caso desejar:  
+**mkdir /mnt/home**  
+**mount /dev/sda3 /mnt/home**  
 
-15- No caso da partição /boot ser separada:
-**mkdir /mnt/boot**
-**mount /dev/sdaX /mnt/boot**
+15- No caso da partição /boot ser separada:  
+**mkdir /mnt/boot**  
+**mount /dev/sdaX /mnt/boot**  
 
-16- Para ver o layout de particionamento atual:
-**lsblk /dev/sda**
+16- Para ver o layout de particionamento atual:  
+**lsblk /dev/sda**  
 
 17- Instalar o sistema no diretório sda
 **pacstrap /mnt base base-devel**
