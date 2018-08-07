@@ -22,7 +22,7 @@
          <label for="icon_prefix2">Mensagem</label>
        </div>
      </div>
-      <button class="btn waves-effect grey teal lighten-2 white-text z-depth-4" type="submit" name="action">Enviar
+      <button class="btn waves-effect white-text z-depth-4" type="submit" name="action">Enviar
          <i class="material-icons right">send</i>
        </button>
     </form>
