@@ -1,6 +1,6 @@
 ---
   <div class="card-reveal">
-    <form class="col s12" action="https://formspree.io/{{site.user_email}}" method="POST">
+    <form class="col s12" action="https://formspree.io//{{site.user_email}}" method="POST">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
