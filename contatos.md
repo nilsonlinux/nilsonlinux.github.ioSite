@@ -5,7 +5,7 @@
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
           <input class="validate" id="icon_prefix" type="text" name="name">
-          <label for="icon_prefix">Name</label>
+          <label for="icon_prefix">Nome</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
@@ -17,10 +17,10 @@
        <div class="input-field col s12">
          <i class="material-icons prefix">message</i>
          <textarea id="icon_prefix2" class="materialize-textarea" name="message"></textarea>
-         <label for="icon_prefix2">Message</label>
+         <label for="icon_prefix2">Mensagem</label>
        </div>
      </div>
       <button class="btn waves-effect grey waves-dark darken-3 white-text z-depth-4" type="submit" name="action">Submit
-         <i class="material-icons right">send</i>
+         <i class="material-icons right">Enviar</i>
        </button>
     </form>
