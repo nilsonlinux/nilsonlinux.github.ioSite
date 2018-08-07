@@ -1,7 +1,5 @@
 ---
-  </div>
   <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">Contact Form<i size="large" class="material-icons right">close</i></span>
     <form class="col s12" action="https://formspree.io/{{user.email}}" method="POST">
       <div class="row">
         <div class="input-field col s6">
@@ -26,6 +24,3 @@
          <i class="material-icons right">send</i>
        </button>
     </form>
-
-  </div>
-</div>
