@@ -1,7 +1,5 @@
 ---
-layout: page
-title: "Contatos"
-
+#### Contatos
 ------
   <div class="card-reveal">
     <form class="col s12" action="https://formspree.io//{{site.user_email}}" method="POST">
