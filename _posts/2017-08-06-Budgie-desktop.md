@@ -11,9 +11,9 @@ budgie-desktop
 ==============
 
 The Budgie Desktop a modern desktop designed to keep out the way of the user. It features heavy integration with the GNOME stack in order for an enhanced experience.
-```
+
 ![main_desktop](https://github.com/solus-project/budgie-desktop/raw/master/.github/screenshots/MainDesktop.png)
-```
+
 ![logo](https://solus-project.com/imgs/budgie-small.png)
 
 IRC: `#budgie-desktop-dev` / `#Solus-Dev` on irc.freenode.net
