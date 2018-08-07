@@ -1,13 +1,14 @@
-
-######CONTATOS.
-
+---
+layout: page
+title: "Contato"
+---
 
   <div class="card-reveal">
     <form class="col s12" action="https://formspree.io//{{site.user_email}}" method="POST">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input class="validate" id="icon_prefix" type="text" name="name">
+          <input class="validate" id="icon_prefix" type="text" name="name"> 
           <label for="icon_prefix">Nome</label>
         </div>
         <div class="input-field col s6">
