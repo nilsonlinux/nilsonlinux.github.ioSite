@@ -10,7 +10,7 @@
         <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
           <input class="validate" id="email" type="email" name="_replyto">
-          <label for="email" data-error="Please enter a valid Email Address" data-success="Verified!">Email</label>
+          <label for="email" data-error="Please enter a valid Email Address" data-success="Verificado!">Email</label>
         </div>
       </div>
       <div class="row">
