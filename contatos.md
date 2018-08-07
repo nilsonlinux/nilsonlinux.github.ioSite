@@ -1,13 +1,4 @@
 ---
-<div class="card medium">
-  <div class="card-image waves-effect waves-block waves-light">
-  </div>
-  <div class="card-content">
-    <span class="card-title activator" style="text-align:right;"><a class="btn-floating waves-effect waves-light red pulse"><i class="large material-icons">arrow_drop_up</i></a></span>
-    <div class="row" style="text-align:center">
-        <a class="waves-effect waves-light btn grey darken-1" target="_blank" href="{{site.github}}"><i class="material-icons right">code</i>Github</a>
-        <a class="waves-effect waves-light btn green darken-2" target="_blank" href="{{site.medium}}"><i class="material-icons right">library_books</i>Medium</a>
-    </div>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Contact Form<i size="large" class="material-icons right">close</i></span>
