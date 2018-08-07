@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Contato"
+title: "Contatos"
 ---
 
   <div class="card-reveal">
