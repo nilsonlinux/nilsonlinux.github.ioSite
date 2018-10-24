@@ -49,3 +49,4 @@ sass:
 future: true
 mermaid:
   src: 'assets/js/mermaid.js'
+  
