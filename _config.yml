@@ -49,3 +49,5 @@ future: true
 mermaid:
   src: 'assets/js/mermaid.js'
   
+
+theme: jekyll-theme-cayman
